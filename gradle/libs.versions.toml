@@ -23,8 +23,14 @@ mockk = "1.13.9"
 koin = "3.2.2"
 androidx-lifecycle = "2.8.0-alpha01"
 androidx-navigation = "2.8.0-alpha01"
+wearComposeFoundation = "1.4.0"
+coil3 = "3.0.0-alpha06"
 
 [libraries]
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
+coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil3" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil3" }
+coil-mp = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }
 androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }

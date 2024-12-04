@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import coil3.compose.AsyncImage
 import net.propertyApp.designSystem.atoms.UpButton
 import net.propertyApp.designSystem.tokens.avivColors
 import net.propertyApp.designSystem.tokens.avivTypography
@@ -82,6 +83,13 @@ fun PropertyDetailView(
             modifier = Modifier.fillMaxWidth(),
             style = avivTypography.h1
         )
+        property.url?.let {
+            AsyncImage(
+                model = it,
+                contentDescription = "Property Image",
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
         Row {
             LeftTableCell("Property Ref")
             RightTableCell(property.id.toString())

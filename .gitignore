@@ -1,0 +1,9 @@
+/composeApp/build/
+/.gradle/
+/domain/build/
+/api/build/
+/data/build/
+/.idea/
+/designSystem/build/
+/avivApi/build/
+/build/
